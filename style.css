@@ -1,0 +1,28 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+body {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: norse-bold, sans-serif;
+}
+#content {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+#sign-up {
+    columns: 2;
+}
+#form-msg {
+    column-span: all;
+}
+input {
+    width: 100%;
+}
+#odin-img {
+    width: 50%;
+    height: auto;
+}
