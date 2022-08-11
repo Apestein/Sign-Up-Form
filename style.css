@@ -4,29 +4,36 @@
 }
 body {
     display: flex;
-    gap: 50px;
     padding: 0;
     margin: 0;
     font-family: norse-bold, sans-serif;
 }
 .form-item {
-    width: 40%;
+    width: 50%;
 }
 input {
-    width: 100%;
+    width: 80%;
+    border-color: #E5E7EB;
+}
+button {
+    font-size: larger;
+    font-weight: bold;
+    color: goldenrod;
+    border-color: goldenrod;
+    background-color: gray;
+    padding: 10px 50px;
 }
 #content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-    width: 50%;
+    background-color: gray;
 }
 #sign-up {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px 50px;
+    background-color: lightgray;
+    box-shadow: 5px 5px 5px black;
 }
 #form-msg {
     width: 100%;
@@ -35,10 +42,38 @@ input {
     font-size: 2rem;
     margin: 0;
 }
-#signup-btn {
-
+#content>p, #sign-up, footer {
+    padding: 100px 50px;
+}
+#left-side {
+    height: 100vh;
+    position: relative;
 }
 #odin-img {
-    width: 50%;
-    height: auto;
+    height: 100%;
+}
+#kratos-img {
+    width: 100px;
+}
+#icon {
+    display: flex;
+    column-gap: 25px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5)   
+}
+#icon>p {
+    color: white;
+}
+.error:valid {
+    border-color: green;
+}
+.error:invalid {
+    border-color: red;
+}
+input:focus {
+    border-color: blue;
+    box-shadow: 5px 5px 5px black;
 }

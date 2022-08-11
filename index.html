@@ -9,7 +9,13 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <img src="/img/odin.jpg" alt="odin" id="odin-img">
+    <div id="left-side">
+        <img src="img/odin.jpg" alt="odin" id="odin-img">
+        <div id="icon">
+            <img src="img/kratos.png" alt="kratos" id="kratos-img">
+            <p>Pre-order Now!</p>
+        </div>
+    </div>
     <div id="content">
         <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!</p>
         <form action="#" id="sign-up">
@@ -18,12 +24,12 @@
             <div class="form-item"><label>Last Name <br><input type="text"></label></div>
             <div class="form-item"><label>Email <br><input type="email"></label></div>
             <div class="form-item"><label>Phone Number <br><input type="tel"></label></div>
-            <div class="form-item"><label>Password <br><input type="password"></label></div>
-            <div class="form-item"><label>Confirm Password <br><input type="password"></label></div>
+            <div class="form-item"><label>Password <br><input type="password" required class="error"></label></div>
+            <div class="form-item"><label>Confirm Password <br><input type="password" required class="error"></label></div>
         </form>
         <footer>
             <button id="signup-btn">Sign Up</button>
-            <h2>Already have an account? Log in</h2>
+            <h2>Already have an account? <a href="#">Log in</a></h2>
         </footer>
     </div>
 </body>
