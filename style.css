@@ -2,10 +2,13 @@
     font-family: norse-bold;
     src: url(Norse-Bold.otf);
 }
-body {
-    display: flex;
+* {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
     font-family: norse-bold, sans-serif;
 }
 .form-item {
@@ -28,6 +31,7 @@ button {
     flex-direction: column;
     justify-content: space-evenly;
     background-color: gray;
+    height: auto;
 }
 #sign-up {
     display: flex;
@@ -74,6 +78,7 @@ button {
     border-color: red;
 }
 input:focus {
-    border-color: blue;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px gray;
+    outline: 1px solid blue;
+
 }
