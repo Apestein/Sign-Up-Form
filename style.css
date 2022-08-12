@@ -2,6 +2,9 @@
     font-family: norse-bold;
     src: url(Norse-Bold.otf);
 }
+:root {
+
+}
 * {
     padding: 0;
     margin: 0;
@@ -10,34 +13,46 @@
 body {
     display: flex;
     font-family: norse-bold, sans-serif;
+    color: white;
 }
 .form-item {
-    width: 50%;
+    width: 40%;
 }
 input {
-    width: 80%;
-    border-color: #E5E7EB;
+    width: 100%;
+    height: 25px;
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
 }
 button {
     font-size: larger;
     font-weight: bold;
     color: goldenrod;
     border-color: goldenrod;
-    background-color: gray;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: black;
     padding: 10px 50px;
+}
+a {
+    text-decoration: none;
+    color: goldenrod;
 }
 #content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    background-color: gray;
-    height: auto;
+    background-color:#30312e;
+    height: 100vh;
 }
 #sign-up {
     display: flex;
     flex-wrap: wrap;
-    background-color: lightgray;
-    box-shadow: 5px 5px 5px black;
+    background-color: #9a9da6;
+    color: #30312e;
+    box-shadow: 10px 10px 10px black;
+    gap: 25px 50px;
+    
 }
 #form-msg {
     width: 100%;
@@ -47,14 +62,17 @@ button {
     margin: 0;
 }
 #content>p, #sign-up, footer {
-    padding: 100px 50px;
+    padding: 50px 50px;
 }
 #left-side {
+    display: flex;
     height: 100vh;
     position: relative;
 }
 #odin-img {
-    height: 100%;
+    display: block;
+    width: 100%;
+    object-fit: cover;
 }
 #kratos-img {
     width: 100px;
@@ -65,20 +83,27 @@ button {
     position: absolute;
     bottom: 0;
     width: 100%;
-    align-items: center;
+    padding: 15px;
     background-color: rgba(0, 0, 0, 0.5)   
 }
 #icon>p {
     color: white;
 }
-.error:valid {
+footer>* {
+    margin: 25px;
+}
+input:valid:not(.error) {
+    border: 2px solid green;
+}
+input:invalid:not(:required), .error {
+    border: 2px solid red;
+}
+/* :required:not(:placeholder-shown) {
     border-color: green;
-}
-.error:invalid {
-    border-color: red;
-}
+} */
 input:focus {
     box-shadow: 5px 5px 5px gray;
-    outline: 1px solid blue;
-
+    outline: none;
+    border: 2px solid;
+    border-color: goldenrod;
 }
